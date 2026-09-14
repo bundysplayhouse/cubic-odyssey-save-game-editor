@@ -55,7 +55,8 @@ planned features/updates
 3. Backup manager — browse dated backups, see what changed, and restore a chosen version. Keep the existing .bak and .prev controls too.
 4. Inventory improvements — sorting, category filters, multi-select quantity edits, and clearer container grouping.
 5. Deeper gameplay editing — investigate ship performance, equipment bonuses, and blueprint unlocks.
-6. GUI rebuild/polish 
+6. Structured config editing — provide labelled fields for stack size, price, durability, and other understood properties, alongside the existing text editor.
+7. GUI rebuild/polish 
 
 
 
