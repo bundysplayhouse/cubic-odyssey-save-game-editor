@@ -2,6 +2,7 @@
 
 a cubic odyssey save game editor
 
+This is a wip
 This is built using AI it is highly experimental!
 Use at your own risk!
 You have been warned!
@@ -43,6 +44,23 @@ When prompted for the save folder, you may select:
 
 Select the extracted game's "configs" folder to enable item/component catalogs
 and the new story TaskCfg progression catalog.
+
+
+
+
+planned features/updates
+
+1. Save overview dashboard — show the character name, level, location, playtime, and selected save path together. 
+2. Pending changes and review — collect edits into a clear before/after list before saving, with an option to discard them.
+3. Backup manager — browse dated backups, see what changed, and restore a chosen version. Keep the existing .bak and .prev controls too.
+4. Inventory improvements — sorting, category filters, multi-select quantity edits, and clearer container grouping.
+5. Deeper gameplay editing — investigate ship performance, equipment bonuses, and blueprint unlocks.
+6. GUI rebuild/polish 
+
+
+
+
+
 
 Safety
 ------
