@@ -52,12 +52,13 @@ planned features/updates
 
 1. Save overview dashboard — show the character name, level, location, playtime, and selected save path together.
 2. Change the experiment lab to save inspector
-3. Pending changes and review — collect edits into a clear before/after list before saving, with an option to discard them.
-4. Backup manager — browse dated backups, see what changed, and restore a chosen version. Keep the existing .bak and .prev controls too.
-5. Inventory improvements — sorting, category filters, multi-select quantity edits, and clearer container grouping.
-6. Deeper gameplay editing — investigate ship performance, equipment bonuses, and blueprint unlocks.
-7. Structured config editing — provide labelled fields for stack size, price, durability, and other understood properties, alongside the existing text editor.
-8. GUI rebuild/polish 
+3. More language support
+4. Pending changes and review — collect edits into a clear before/after list before saving, with an option to discard them.
+5. Backup manager — browse dated backups, see what changed, and restore a chosen version. Keep the existing .bak and .prev controls too.
+6. Inventory improvements — sorting, category filters, multi-select quantity edits, and clearer container grouping.
+7. Deeper gameplay editing — investigate ship performance, equipment bonuses, and blueprint unlocks.
+8. Structured config editing — provide labelled fields for stack size, price, durability, and other understood properties, alongside the existing text editor.
+9. GUI rebuild/polish 
 
 
 
