@@ -1,0 +1,187 @@
+{
+  "theme": "Midnight",
+  "window_size": [
+    1480,
+    900
+  ],
+  "column_widths": {
+    "labtree": {
+      "item": 220,
+      "value1": 180,
+      "value2": 220,
+      "value3": 220,
+      "details": 600
+    },
+    "it": {
+      "slot": 50,
+      "location": 120,
+      "quickslot": 70,
+      "identifier": 315,
+      "type": 135,
+      "tier": 45,
+      "qty": 70,
+      "maxstack": 75,
+      "condition": 120,
+      "file": 165,
+      "container": 230
+    },
+    "stats_tree": {
+      "field": 70,
+      "name": 260,
+      "value": 150
+    },
+    "quest_tree": {
+      "index": 42,
+      "type": 190,
+      "ra": 95,
+      "rb": 95,
+      "tasks": 55,
+      "target": 360,
+      "position": 240,
+      "ids": 360
+    },
+    "story_tree": {
+      "current": 62,
+      "id": 60,
+      "step": 230,
+      "chapter": 65,
+      "category": 180,
+      "description": 150,
+      "arg": 250,
+      "needed": 300,
+      "reward": 240
+    },
+    "ship_tree": {
+      "ship": 55,
+      "tag": 95,
+      "components": 90,
+      "deployables": 90,
+      "cargo": 85,
+      "f12": 85,
+      "f24": 85,
+      "energy": 150,
+      "voxel": 170
+    },
+    "ship_component_tree": {
+      "ship": 50,
+      "slot": 75,
+      "identifier": 310,
+      "role": 110,
+      "class": 115,
+      "tier": 50,
+      "price": 75,
+      "raw2": 85,
+      "attributes": 600
+    },
+    "ship_deploy_tree": {
+      "ship": 50,
+      "entity": 95,
+      "identifier": 330,
+      "condition": 110,
+      "tag": 100
+    },
+    "world_tree": {
+      "file": 160,
+      "location": 410,
+      "identifier": 360,
+      "type": 160,
+      "tier": 50,
+      "quantity": 80,
+      "condition": 135,
+      "offset": 110
+    },
+    "bp_saved_tree": {
+      "index": 45,
+      "tag": 70,
+      "fields": 70,
+      "size": 80,
+      "strings": 1050
+    },
+    "bp_catalog_tree": {
+      "name": 260,
+      "class": 120,
+      "title": 320,
+      "weapon": 140,
+      "mounts": 80,
+      "file": 550
+    },
+    "ct": {
+      "id": 360,
+      "type": 170,
+      "tier": 55,
+      "stack": 65,
+      "price": 90,
+      "file": 650
+    },
+    "pending_tree": {
+      "path": 700,
+      "scope": 180,
+      "changes": 130
+    },
+    "pending_detail_tree": {
+      "field": 380,
+      "before": 360,
+      "after": 360
+    },
+    "backup_tree": {
+      "date": 250,
+      "file": 240,
+      "folder": 620
+    },
+    "backup_detail_tree": {
+      "field": 380,
+      "before": 360,
+      "after": 360
+    },
+    "research_tree": {
+      "area": 120,
+      "config": 290,
+      "attribute": 230,
+      "operation": 120,
+      "value": 170,
+      "target": 180,
+      "source": 650
+    },
+    "diff_tree": {
+      "file": 500,
+      "state": 100,
+      "a": 110,
+      "b": 110,
+      "decoded": 190
+    },
+    "diff_detail": {
+      "kind": 190,
+      "field": 350,
+      "before": 400,
+      "after": 400
+    },
+    "health_tree": {
+      "file": 500,
+      "state": 110,
+      "detail": 950
+    },
+    "mapping_tree": {
+      "slot": 75,
+      "path": 330,
+      "name": 270,
+      "type": 65,
+      "offset": 100,
+      "value": 380,
+      "state": 150
+    },
+    "entity_tree": {
+      "file": 220,
+      "category": 180,
+      "id": 150,
+      "kind": 300,
+      "position": 240,
+      "items": 70
+    },
+    "entity_items": {
+      "id": 400,
+      "qty": 150,
+      "condition": 180,
+      "offset": 120
+    }
+  }
+}

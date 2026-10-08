@@ -1,0 +1,56 @@
+Cubic Odyssey gameplay mapping notes — v1.28
+============================================
+
+Source: the game configs and saves supplied with this project. This is static
+config/save evidence, not an in-game performance validation.
+
+The Gameplay Research page scans components, gear and recipes. In the supplied
+config tree it reads 1,338 files and displays 5,264 attribute/discovery rows.
+Each row carries its source path. Search by item/config name or attribute.
+
+Ship performance
+----------------
+VehicleComponentCfg contains AttributeOperation records with m_attribute,
+m_operation, m_value and sometimes m_affectsShip. The operation matters:
+SET values and ADD values cannot simply be treated as interchangeable totals.
+For example V_FRIGATE_SPACE_ENGINE_MK1.cfg specifies SPACE_SPEED SET 487,
+ACCELERATION SET 4032, WARP_RANGE SET 1 and CRUISE_CHARGE_TIME SET 8;
+these example operations carry m_affectsShip TRUE.
+These are raw config values; physical units and final runtime values are not
+proven. Existing component replacement remains available. New direct numeric
+ship-performance writes have not been enabled.
+
+Equipment bonuses
+-----------------
+ClothingCfg also uses AttributeOperation. MOD_WEAPON_SPEED_1.cfg has
+BULLET_SPEED ADD 5, with no explicit ship flag. MOD_SUIT_ARMOR_1.cfg has
+ARMOR ADD 0.01 and explicitly sets m_affectsShip TRUE. The unusual flag is
+displayed as written; the editor does not reinterpret it as a player-only bonus.
+Missing flags are labelled absent rather than silently treated as false.
+This improves the evidence over displaying only an attribute/value pair.
+Final stacking, operation order, equipped state and skill multipliers remain
+unproven. New direct equipment-bonus writes have not been enabled.
+
+Blueprints and recipe discovery
+------------------------------
+VehicleBlueprintCfg describes ship templates. CraftingRecipeCfg instead has
+discovered, discoveredByItem, neededSkillType and neededSkillLevel rules.
+MOD_WEAPON_SPEED_1's recipe has discovered true, discoveredByItem
+"res.circuit.board", neededSkillType CRAFTING and neededSkillLevel 4.
+Those rules are not evidence that 93_blueprints.sav is a recipe-unlock list.
+The supplied global PlayerBlueprintCollection contains zero BlueprintEntry
+objects, so it cannot establish a valid populated entry's serialization.
+Blueprint insertion/unlock writes remain disabled.
+
+Next in-game validation
+-----------------------
+Use a separate test slot and save with the game fully closed between captures.
+1. Record an engine's displayed stats, replace only that engine, save, and
+   compare the resulting client state and displayed values after reloading.
+2. Equip one known bonus item, record the affected stat, save/reload, then
+   unequip it and repeat. This separates persistent state from runtime caches.
+3. Capture the complete save folder before and after exactly one recipe unlock
+   or custom blueprint save. Test those two actions separately and compare all
+   changed files, including global files outside the numbered slot.
+Enable further writers only after mapping field types/ownership and verifying
+the edited result survives an in-game reload.
