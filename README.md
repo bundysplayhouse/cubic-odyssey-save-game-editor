@@ -7,6 +7,8 @@ This is built using AI it is highly experimental!
 Use at your own risk!
 You have been warned!
 
+Use The EXE Not The Batch.
+
 Cubic Odyssey Save Editor v1.34
 ================================
 
